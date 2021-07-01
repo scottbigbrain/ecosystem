@@ -29,7 +29,7 @@ function draw(g::Game)
 	end
 
 	for b in bushes
-		draw_hex_from_sim(b.x, b.y, colorant"darkgreen", fill=true)
+		draw_hex_from_sim(b.x, b.y, convert(Colorant, RGB(.0, .29, .0)), fill=true)
 	end
 
 	for m in mice
